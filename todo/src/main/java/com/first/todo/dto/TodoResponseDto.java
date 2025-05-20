@@ -3,6 +3,7 @@ package com.first.todo.dto;
 import java.time.LocalDateTime;
 
 import com.first.todo.model.TodoStatus;
+import com.first.todo.model.User;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TodoResponseDto {
+public class TodoResponseDto extends User {
      
     private Long id;
     private String title;

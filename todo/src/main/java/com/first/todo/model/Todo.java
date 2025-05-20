@@ -51,9 +51,8 @@ public class Todo {
     @Column(name = "status")
     private TodoStatus status;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    @Column(name = "user_id")
+    private Long userId;
 
     @CreationTimestamp
     @Column(name = "created_at", updatable = false)
